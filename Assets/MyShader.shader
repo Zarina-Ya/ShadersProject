@@ -50,7 +50,7 @@ Shader "TestShaders/MyShader"
                 //v.vertex.xyz += cos((v.normal )* (-_Height ) * v.texcoord.x);
 
                // v.vertex.xyz += v.normal * _Height * (v.texcoord.x * v.texcoord.x) ;
-                v.vertex.xyz += v.normal * _Height * (sin(v.texcoord.x/v.texcoord.x.lengh )/3.1415) ;
+                v.vertex.xyz += v.normal * _Height * (sin(v.texcoord.x/ lenght(v.texcoord.x) )/3.1415) ;
 
                 v2f result;
                 result.vertex = UnityObjectToClipPos(v.vertex);
