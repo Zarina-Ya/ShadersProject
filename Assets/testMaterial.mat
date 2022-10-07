@@ -73,7 +73,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Height: 12.8
+    - _Height: 0
     - _Metallic: 0
     - _MixValue: 0.128
     - _Mode: 0

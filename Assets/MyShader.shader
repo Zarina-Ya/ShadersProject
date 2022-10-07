@@ -20,8 +20,7 @@ Shader "TestShaders/MyShader"
         Pass
         {
             CGPROGRAM
-// Upgrade NOTE: excluded shader from DX11, OpenGL ES 2.0 because it uses unsized arrays
-#pragma exclude_renderers d3d11 gles
+
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
@@ -51,7 +50,7 @@ Shader "TestShaders/MyShader"
                 //v.vertex.xyz += cos((v.normal )* (-_Height ) * v.texcoord.x);
 
                // v.vertex.xyz += v.normal * _Height * (v.texcoord.x * v.texcoord.x) ;
-                 v.vertex.xyz += v.normal * _Height * (sin(v.texcoord.x/v.texcoord)/3.1415) ;
+                v.vertex.xyz += v.normal * _Height * (sin(v.texcoord.x/v.texcoord.x.lengh )/3.1415) ;
 
                 v2f result;
                 result.vertex = UnityObjectToClipPos(v.vertex);
